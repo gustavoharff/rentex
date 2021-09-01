@@ -1,7 +1,8 @@
 import React from 'react';
 import { Text } from 'react-native';
 
-import { Wrapper } from './style'; 
+import { Wrapper } from './style';
+
 interface HomeScreenProps {
 
 }
