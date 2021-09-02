@@ -13,7 +13,7 @@ import {
 import { ThemeProvider } from "styled-components";
 
 import { HomeScreen } from "_screens";
-import { theme } from "./styles/theme";
+import { theme } from "_styles";
 
 export function App() {
   const [fontsLoaded] = useFonts({
