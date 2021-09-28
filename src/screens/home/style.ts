@@ -24,7 +24,7 @@ export const HeaderWrapper = styled.View`
 `;
 
 export const HeaderTotalCars = styled(Subhead).attrs({
-  font: "primary",
+  font: "secondary",
 })`
   color: ${({ theme }) => theme.colors.text};
 `;

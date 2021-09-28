@@ -1,5 +1,4 @@
 import React from 'react';
-import { View } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
  
 import { logo as Logo } from '_assets';

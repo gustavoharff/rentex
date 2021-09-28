@@ -21,7 +21,8 @@ export const theme = {
     secondary_600: "Archivo_600SemiBold",
 
     sizes: {
-      subhead: 15
+      subhead: 15,
+      caption2: 11,
     }
   },
 };
