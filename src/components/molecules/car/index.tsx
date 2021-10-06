@@ -1,6 +1,6 @@
 import React from "react";
 
-import { gasoline as Gasoline, audi } from "_assets";
+import { gasoline as Gasoline } from "_assets";
 
 import {
   Wrapper,
@@ -15,32 +15,27 @@ import {
 } from "./styles";
 
 interface CarProps {
-  brand: string;
-  name: string;
-  rent: {
-    period: string;
-    price: number;
-  };
+  car: Car;
 }
 
-export function Car({ brand, name, rent }: CarProps) {
+export function Car({ car }: CarProps) {
   return (
     <Wrapper>
       <Info>
-        <Brand>{brand}</Brand>
-        <Name>{name}</Name>
+        <Brand>{car.brand}</Brand>
+        <Name>{car.name}</Name>
 
         <About>
           <Rent>
-            <Period>{rent.period}</Period>
-            <Price>{rent.price}</Price>
+            <Period>{car.rent.period}</Period>
+            <Price>{`R$ ${car.rent.price}`}</Price>
           </Rent>
 
           <Gasoline />
         </About>
       </Info>
 
-      <Preview source={audi} />
+      <Preview source={{ uri: car.thumbnail }} resizeMode="contain" />
     </Wrapper>
   );
 }

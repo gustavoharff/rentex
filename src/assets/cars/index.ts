@@ -1,1 +1,0 @@
-export { default as audi } from './audi.png';

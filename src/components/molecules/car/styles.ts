@@ -1,5 +1,6 @@
 import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components/native";
+
 import { Caption2, Subhead } from "_atoms";
 
 export const Wrapper = styled.View`
