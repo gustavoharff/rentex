@@ -5,11 +5,7 @@ import { logo as Logo } from '_assets';
 
 import { HeaderTotalCars, HeaderWrapper } from './style';
 
-interface HeaderProps {
-
-}
-
-export function Header(props: HeaderProps){
+export function Header(){
   return (
     <HeaderWrapper>
       <Logo width={RFValue(108)} height={RFValue(12)} />

@@ -12,7 +12,7 @@ import {
 } from "@expo-google-fonts/archivo";
 import { ThemeProvider } from "styled-components";
 
-import { HomeScreen } from "_screens";
+import { CarDetails } from "_screens";
 import { theme } from "_styles";
 
 export function App() {
@@ -30,7 +30,7 @@ export function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <HomeScreen />
+      <CarDetails />
     </ThemeProvider>
   );
 }
