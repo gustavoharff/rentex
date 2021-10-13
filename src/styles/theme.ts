@@ -23,6 +23,8 @@ export const theme = {
     sizes: {
       subhead: 15,
       caption2: 11,
+      title1: 28,
+      title2: 22
     }
   },
 };

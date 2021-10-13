@@ -3,7 +3,19 @@ import React from "react";
 import { BackButton } from "_atoms";
 import { ImageSlider } from "_molecules";
 
-import { Wrapper, Header, SlideWrapper } from "./styles";
+import {
+  Wrapper,
+  Header,
+  SlideWrapper,
+  Content,
+  Details,
+  Description,
+  Brand,
+  Name,
+  Rent,
+  Period,
+  Price,
+} from "./styles";
 
 export function CarDetails() {
   return (
@@ -19,6 +31,20 @@ export function CarDetails() {
           ]}
         />
       </SlideWrapper>
+
+      <Content>
+        <Details>
+          <Description>
+            <Brand>Lamborguini</Brand>
+            <Name>Huracaran</Name>
+          </Description>
+
+          <Rent>
+            <Period>Ao dia</Period>
+            <Price>R$ 580,00</Price>
+          </Rent>
+        </Details>
+      </Content>
     </Wrapper>
   );
 }

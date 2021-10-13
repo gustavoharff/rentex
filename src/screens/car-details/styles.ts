@@ -1,5 +1,7 @@
 import styled from "styled-components/native";
-import { getStatusBarHeight } from 'react-native-iphone-x-helper'
+import { getStatusBarHeight } from "react-native-iphone-x-helper";
+
+import { Caption2, Title2 } from "_atoms";
 
 export const Wrapper = styled.View`
   flex: 1;
@@ -18,4 +20,46 @@ export const Header = styled.View`
 
 export const SlideWrapper = styled.View`
   margin-top: ${getStatusBarHeight() + 32}px;
-`
+`;
+
+export const Content = styled.ScrollView.attrs({
+  contentContainerStyle: {
+    padding: 24,
+    alignItems: "center",
+  },
+  showVerticalScrollIndicator: false,
+})``;
+
+export const Details = styled.View`
+  width: 100%;
+
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 38px;
+`;
+
+export const Description = styled.View``;
+
+export const Brand = styled(Caption2)`
+  color: ${({ theme }) => theme.colors.text_detail};
+
+  text-transform: uppercase;
+`;
+
+export const Name = styled(Title2)`
+  color: ${({ theme }) => theme.colors.title};
+`;
+
+export const Rent = styled.View``;
+
+export const Period = styled(Caption2)`
+  color: ${({ theme }) => theme.colors.text_detail};
+
+  text-transform: uppercase;
+`;
+
+export const Price = styled(Title2)`
+  color: ${({ theme }) => theme.colors.main};
+`;
