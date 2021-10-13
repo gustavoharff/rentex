@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 import { getStatusBarHeight } from "react-native-iphone-x-helper";
 
-import { Caption2, Title2 } from "_atoms";
+import { Caption2, Subhead, Title2 } from "_atoms";
 
 export const Wrapper = styled.View`
   flex: 1;
@@ -62,4 +62,14 @@ export const Period = styled(Caption2)`
 
 export const Price = styled(Title2)`
   color: ${({ theme }) => theme.colors.main};
+`;
+
+export const About = styled(Subhead).attrs({
+  font: "primary",
+})`
+  color: ${({ theme }) => theme.colors.text};
+
+  text-align: justify;
+
+  margin-top: 23px;
 `;

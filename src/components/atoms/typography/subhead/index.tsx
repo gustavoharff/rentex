@@ -5,9 +5,9 @@ import { Text } from "./styles";
 
 interface SubheadProps extends TextProps {
   children: ReactNode;
-  font: 'primary' | 'secondary';
+  font?: 'primary' | 'secondary';
 }
 
-export function Subhead({ children, ...rest }: SubheadProps) {
-  return <Text {...rest}>{children}</Text>;
+export function Subhead({ font = "secondary", children, ...rest }: SubheadProps) {
+  return <Text font={font} {...rest}>{children}</Text>;
 }
