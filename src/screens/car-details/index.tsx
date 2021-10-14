@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BackButton } from "_atoms";
+import { BackButton, Button } from "_atoms";
 import { Accessory, ImageSlider } from "_molecules";
 import { Accessories } from "_organisms";
 
@@ -17,6 +17,7 @@ import {
   Period,
   Price,
   About,
+  Footer
 } from "./styles";
 
 export function CarDetails() {
@@ -64,6 +65,10 @@ export function CarDetails() {
           para quem gosta de acelerar.
         </About>
       </Content>
+
+      <Footer>
+        <Button>Escolher período do aluguel</Button>
+      </Footer>
     </Wrapper>
   );
 }
