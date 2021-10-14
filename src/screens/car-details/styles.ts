@@ -2,6 +2,7 @@ import styled from "styled-components/native";
 import { getStatusBarHeight } from "react-native-iphone-x-helper";
 
 import { Caption2, Subhead, Title2 } from "_atoms";
+import { RFValue } from "react-native-responsive-fontsize";
 
 export const Wrapper = styled.View`
   flex: 1;
@@ -72,4 +73,6 @@ export const About = styled(Subhead).attrs({
   text-align: justify;
 
   margin-top: 23px;
+
+  line-height: ${RFValue(25)}px;
 `;

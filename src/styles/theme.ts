@@ -22,6 +22,7 @@ export const theme = {
 
     sizes: {
       subhead: 15,
+      footnote: 13,
       caption2: 11,
       title1: 28,
       title2: 22

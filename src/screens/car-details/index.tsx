@@ -1,7 +1,8 @@
 import React from "react";
 
 import { BackButton } from "_atoms";
-import { ImageSlider } from "_molecules";
+import { Accessory, ImageSlider } from "_molecules";
+import { Accessories } from "_organisms";
 
 import {
   Wrapper,
@@ -15,7 +16,7 @@ import {
   Rent,
   Period,
   Price,
-  About
+  About,
 } from "./styles";
 
 export function CarDetails() {
@@ -45,6 +46,17 @@ export function CarDetails() {
             <Price>R$ 580,00</Price>
           </Rent>
         </Details>
+
+        <Accessories
+          accessories={[
+            { name: "380Km/h", icon: "speed" },
+            { name: "3.2s", icon: "acceleration" },
+            { name: "800HP", icon: "force" },
+            { name: "Auto", icon: "exchange" },
+            { name: "Gasolina", icon: "gasoline" },
+            { name: "2 pessoas", icon: "people" },
+          ]}
+        />
 
         <About>
           Este é automóvel desportivo. Surgiu do lendário touro de lide
